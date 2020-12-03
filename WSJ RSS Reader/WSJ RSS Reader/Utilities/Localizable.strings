@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  WSJ RSS Reader
+
+  Created by Ben Frye on 12/3/20.
+  
+*/
+
+"WallStreetJournal" = "Wall Street Journal";
+"OpinionTitle" = "Opinion";
+"WorldNewsTitle" = "World News";
+"USBusinessTitle" = "U.S. Business";
+"MarketsNewsTitle" = "Markets News";
+"TechnologyWhatsNewTitle" = "Technology";
+"LifestyleTitle" = "Lifestyle";
+"FetchError" = "There was an error retrieving the feed.";
+"Dismiss" = "Dismiss";

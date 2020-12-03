@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1720D1EA257992AD00E1223D /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720D1E9257992AD00E1223D /* ItemCell.swift */; };
+		1753A6E92578837800E60F94 /* RSSReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A6E82578837800E60F94 /* RSSReaderApp.swift */; };
+		1753A6EB2578837800E60F94 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A6EA2578837800E60F94 /* FeedView.swift */; };
+		1753A6ED2578837A00E60F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753A6EC2578837A00E60F94 /* Assets.xcassets */; };
+		1753A6F02578837A00E60F94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753A6EF2578837A00E60F94 /* Preview Assets.xcassets */; };
+		1753A6FB2578837A00E60F94 /* WSJ_RSS_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A6FA2578837A00E60F94 /* WSJ_RSS_ReaderTests.swift */; };
+		1753A7062578837A00E60F94 /* WSJ_RSS_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A7052578837A00E60F94 /* WSJ_RSS_ReaderUITests.swift */; };
+		1753A718257883AF00E60F94 /* RSSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A717257883AF00E60F94 /* RSSEndpoint.swift */; };
+		1753A72C257887C500E60F94 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A72B257887C500E60F94 /* FeedParser.swift */; };
+		1753A7322578888F00E60F94 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A7312578888F00E60F94 /* Feed.swift */; };
+		1753A73D2578906300E60F94 /* NetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A73C2578906300E60F94 /* NetworkInteractor.swift */; };
+		1753A74525793C0E00E60F94 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753A74425793C0E00E60F94 /* FeedViewModel.swift */; };
+		17A43AB72579539900896887 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A43AB62579539900896887 /* SafariView.swift */; };
+		17A43ABC2579588C00896887 /* FeedSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A43ABB2579588C00896887 /* FeedSelectorView.swift */; };
+		17A43AC1257958BF00896887 /* FeedSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A43AC0257958BF00896887 /* FeedSelectorViewModel.swift */; };
+		17A43ADC25797A6200896887 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A43ADB25797A6200896887 /* LocalizedStrings.swift */; };
+		17A43AE425797AC900896887 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17A43AE325797AC900896887 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1753A6F72578837A00E60F94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1753A6DD2578837800E60F94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1753A6E42578837800E60F94;
+			remoteInfo = "WSJ RSS Reader";
+		};
+		1753A7022578837A00E60F94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1753A6DD2578837800E60F94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1753A6E42578837800E60F94;
+			remoteInfo = "WSJ RSS Reader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1720D1E9257992AD00E1223D /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		1753A6E52578837800E60F94 /* RSS Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753A6E82578837800E60F94 /* RSSReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSReaderApp.swift; sourceTree = "<group>"; };
+		1753A6EA2578837800E60F94 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		1753A6EC2578837A00E60F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1753A6EF2578837A00E60F94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1753A6F12578837A00E60F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753A6F62578837A00E60F94 /* WSJ RSS ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WSJ RSS ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753A6FA2578837A00E60F94 /* WSJ_RSS_ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSJ_RSS_ReaderTests.swift; sourceTree = "<group>"; };
+		1753A6FC2578837A00E60F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753A7012578837A00E60F94 /* WSJ RSS ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WSJ RSS ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753A7052578837A00E60F94 /* WSJ_RSS_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSJ_RSS_ReaderUITests.swift; sourceTree = "<group>"; };
+		1753A7072578837A00E60F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753A717257883AF00E60F94 /* RSSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSEndpoint.swift; sourceTree = "<group>"; };
+		1753A72B257887C500E60F94 /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		1753A7312578888F00E60F94 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		1753A73C2578906300E60F94 /* NetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractor.swift; sourceTree = "<group>"; };
+		1753A74425793C0E00E60F94 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		17A43AB62579539900896887 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		17A43ABB2579588C00896887 /* FeedSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSelectorView.swift; sourceTree = "<group>"; };
+		17A43AC0257958BF00896887 /* FeedSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSelectorViewModel.swift; sourceTree = "<group>"; };
+		17A43ADB25797A6200896887 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		17A43AE325797AC900896887 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1753A6E22578837800E60F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6F32578837A00E60F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6FE2578837A00E60F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1753A6DC2578837800E60F94 = {
+			isa = PBXGroup;
+			children = (
+				1753A6E72578837800E60F94 /* WSJ RSS Reader */,
+				1753A6F92578837A00E60F94 /* WSJ RSS ReaderTests */,
+				1753A7042578837A00E60F94 /* WSJ RSS ReaderUITests */,
+				1753A6E62578837800E60F94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1753A6E62578837800E60F94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1753A6E52578837800E60F94 /* RSS Reader.app */,
+				1753A6F62578837A00E60F94 /* WSJ RSS ReaderTests.xctest */,
+				1753A7012578837A00E60F94 /* WSJ RSS ReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1753A6E72578837800E60F94 /* WSJ RSS Reader */ = {
+			isa = PBXGroup;
+			children = (
+				1753A71F2578867200E60F94 /* Utilities */,
+				1753A7162578839E00E60F94 /* Network */,
+				1753A7302578888500E60F94 /* Models */,
+				1753A749257945B000E60F94 /* Views */,
+				1753A74D257945EF00E60F94 /* ViewModels */,
+				1753A6E82578837800E60F94 /* RSSReaderApp.swift */,
+				1753A6EC2578837A00E60F94 /* Assets.xcassets */,
+				1753A6F12578837A00E60F94 /* Info.plist */,
+				1753A6EE2578837A00E60F94 /* Preview Content */,
+			);
+			path = "WSJ RSS Reader";
+			sourceTree = "<group>";
+		};
+		1753A6EE2578837A00E60F94 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1753A6EF2578837A00E60F94 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1753A6F92578837A00E60F94 /* WSJ RSS ReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1753A6FA2578837A00E60F94 /* WSJ_RSS_ReaderTests.swift */,
+				1753A6FC2578837A00E60F94 /* Info.plist */,
+			);
+			path = "WSJ RSS ReaderTests";
+			sourceTree = "<group>";
+		};
+		1753A7042578837A00E60F94 /* WSJ RSS ReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1753A7052578837A00E60F94 /* WSJ_RSS_ReaderUITests.swift */,
+				1753A7072578837A00E60F94 /* Info.plist */,
+			);
+			path = "WSJ RSS ReaderUITests";
+			sourceTree = "<group>";
+		};
+		1753A7162578839E00E60F94 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1753A717257883AF00E60F94 /* RSSEndpoint.swift */,
+				1753A73C2578906300E60F94 /* NetworkInteractor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1753A71F2578867200E60F94 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1753A72B257887C500E60F94 /* FeedParser.swift */,
+				17A43ADB25797A6200896887 /* LocalizedStrings.swift */,
+				17A43AE325797AC900896887 /* Localizable.strings */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1753A7302578888500E60F94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1753A7312578888F00E60F94 /* Feed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1753A749257945B000E60F94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17A43ABB2579588C00896887 /* FeedSelectorView.swift */,
+				1753A6EA2578837800E60F94 /* FeedView.swift */,
+				1720D1E9257992AD00E1223D /* ItemCell.swift */,
+				17A43AB62579539900896887 /* SafariView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1753A74D257945EF00E60F94 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1753A74425793C0E00E60F94 /* FeedViewModel.swift */,
+				17A43AC0257958BF00896887 /* FeedSelectorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1753A6E42578837800E60F94 /* WSJ RSS Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753A70A2578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS Reader" */;
+			buildPhases = (
+				1753A6E12578837800E60F94 /* Sources */,
+				1753A6E22578837800E60F94 /* Frameworks */,
+				1753A6E32578837800E60F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WSJ RSS Reader";
+			productName = "WSJ RSS Reader";
+			productReference = 1753A6E52578837800E60F94 /* RSS Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1753A6F52578837A00E60F94 /* WSJ RSS ReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753A70D2578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS ReaderTests" */;
+			buildPhases = (
+				1753A6F22578837A00E60F94 /* Sources */,
+				1753A6F32578837A00E60F94 /* Frameworks */,
+				1753A6F42578837A00E60F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1753A6F82578837A00E60F94 /* PBXTargetDependency */,
+			);
+			name = "WSJ RSS ReaderTests";
+			productName = "WSJ RSS ReaderTests";
+			productReference = 1753A6F62578837A00E60F94 /* WSJ RSS ReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1753A7002578837A00E60F94 /* WSJ RSS ReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753A7102578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS ReaderUITests" */;
+			buildPhases = (
+				1753A6FD2578837A00E60F94 /* Sources */,
+				1753A6FE2578837A00E60F94 /* Frameworks */,
+				1753A6FF2578837A00E60F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1753A7032578837A00E60F94 /* PBXTargetDependency */,
+			);
+			name = "WSJ RSS ReaderUITests";
+			productName = "WSJ RSS ReaderUITests";
+			productReference = 1753A7012578837A00E60F94 /* WSJ RSS ReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1753A6DD2578837800E60F94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					1753A6E42578837800E60F94 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					1753A6F52578837A00E60F94 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1753A6E42578837800E60F94;
+					};
+					1753A7002578837A00E60F94 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1753A6E42578837800E60F94;
+					};
+				};
+			};
+			buildConfigurationList = 1753A6E02578837800E60F94 /* Build configuration list for PBXProject "WSJ RSS Reader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1753A6DC2578837800E60F94;
+			productRefGroup = 1753A6E62578837800E60F94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1753A6E42578837800E60F94 /* WSJ RSS Reader */,
+				1753A6F52578837A00E60F94 /* WSJ RSS ReaderTests */,
+				1753A7002578837A00E60F94 /* WSJ RSS ReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1753A6E32578837800E60F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A6F02578837A00E60F94 /* Preview Assets.xcassets in Resources */,
+				17A43AE425797AC900896887 /* Localizable.strings in Resources */,
+				1753A6ED2578837A00E60F94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6F42578837A00E60F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6FF2578837A00E60F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1753A6E12578837800E60F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A74525793C0E00E60F94 /* FeedViewModel.swift in Sources */,
+				1753A718257883AF00E60F94 /* RSSEndpoint.swift in Sources */,
+				1753A73D2578906300E60F94 /* NetworkInteractor.swift in Sources */,
+				1753A7322578888F00E60F94 /* Feed.swift in Sources */,
+				17A43AB72579539900896887 /* SafariView.swift in Sources */,
+				17A43AC1257958BF00896887 /* FeedSelectorViewModel.swift in Sources */,
+				17A43ABC2579588C00896887 /* FeedSelectorView.swift in Sources */,
+				1753A6EB2578837800E60F94 /* FeedView.swift in Sources */,
+				1720D1EA257992AD00E1223D /* ItemCell.swift in Sources */,
+				1753A6E92578837800E60F94 /* RSSReaderApp.swift in Sources */,
+				17A43ADC25797A6200896887 /* LocalizedStrings.swift in Sources */,
+				1753A72C257887C500E60F94 /* FeedParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6F22578837A00E60F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A6FB2578837A00E60F94 /* WSJ_RSS_ReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753A6FD2578837A00E60F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A7062578837A00E60F94 /* WSJ_RSS_ReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1753A6F82578837A00E60F94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1753A6E42578837800E60F94 /* WSJ RSS Reader */;
+			targetProxy = 1753A6F72578837A00E60F94 /* PBXContainerItemProxy */;
+		};
+		1753A7032578837A00E60F94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1753A6E42578837800E60F94 /* WSJ RSS Reader */;
+			targetProxy = 1753A7022578837A00E60F94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1753A7082578837A00E60F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1753A7092578837A00E60F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1753A70B2578837A00E60F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WSJ RSS Reader/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WSJ RSS Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-Reader";
+				PRODUCT_NAME = "RSS Reader";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1753A70C2578837A00E60F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WSJ RSS Reader/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WSJ RSS Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-Reader";
+				PRODUCT_NAME = "RSS Reader";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1753A70E2578837A00E60F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				INFOPLIST_FILE = "WSJ RSS ReaderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSJ RSS Reader.app/WSJ RSS Reader";
+			};
+			name = Debug;
+		};
+		1753A70F2578837A00E60F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				INFOPLIST_FILE = "WSJ RSS ReaderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSJ RSS Reader.app/WSJ RSS Reader";
+			};
+			name = Release;
+		};
+		1753A7112578837A00E60F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				INFOPLIST_FILE = "WSJ RSS ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WSJ RSS Reader";
+			};
+			name = Debug;
+		};
+		1753A7122578837A00E60F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9M874U8Z;
+				INFOPLIST_FILE = "WSJ RSS ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benhamine.WSJ-RSS-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WSJ RSS Reader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1753A6E02578837800E60F94 /* Build configuration list for PBXProject "WSJ RSS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A7082578837A00E60F94 /* Debug */,
+				1753A7092578837A00E60F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753A70A2578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A70B2578837A00E60F94 /* Debug */,
+				1753A70C2578837A00E60F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753A70D2578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS ReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A70E2578837A00E60F94 /* Debug */,
+				1753A70F2578837A00E60F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753A7102578837A00E60F94 /* Build configuration list for PBXNativeTarget "WSJ RSS ReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A7112578837A00E60F94 /* Debug */,
+				1753A7122578837A00E60F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1753A6DD2578837800E60F94 /* Project object */;
+}
